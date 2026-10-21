@@ -3,3 +3,4 @@ export function greet(name){
 }
 
 export { clamp } from "./math/clamp.js";
+export { lerp } from "./math/lerp.js";
