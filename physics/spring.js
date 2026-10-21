@@ -13,7 +13,7 @@ export function updateSpring(position, home, velocity, strength, damping = 0.93)
     velocity = (velocity + force) * damping; // // use the new velocity to move the dot 
     position = position + velocity;
 
-    return (position, velocity);
+    return { position, velocity };
     // you can actually return MULTIPLE variables as well, or update
     // return means UPDATE
     // these are actually objects
