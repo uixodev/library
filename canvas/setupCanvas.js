@@ -16,7 +16,7 @@ export function setupCanvas(canvas, width, height) {
   canvas.width = width * dpr;
   canvas.height = height * dpr;
 
-  pencil.scale(dpr, dpr);
+  ctx.scale(dpr, dpr);
 
   return ctx;
 }
