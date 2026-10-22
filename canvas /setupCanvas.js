@@ -9,7 +9,7 @@
 // pencil.scale(dpr, dpr);
 
 export function setupCanvas(canvas, width, height) {
-  const pencil = canvas.getContext("2d");
+  const ctx = canvas.getContext("2d");
 
   const dpr = window.devicePixelRatio || 1;
 
@@ -18,5 +18,5 @@ export function setupCanvas(canvas, width, height) {
 
   pencil.scale(dpr, dpr);
 
-  return pencil;
+  return ctx;
 }
